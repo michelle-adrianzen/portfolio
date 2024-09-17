@@ -19,3 +19,54 @@
 {
     border: none !important;
 }
+.card-gallery
+{
+ cursor: pointer;
+ position: relative;
+}
+.back-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.card-gallery:hover .back-content {
+    display: flex;
+    opacity: 1;
+}
+
+.card-gallery .back-content {
+    display: flex;
+    opacity: 0;
+}
+
+.card-gallery:hover .back-content {
+    display: flex;
+    opacity: 1;
+}
+
+.card-gallery .back-content {
+    transition: opacity 0.7s ease-in-out;
+}
+
+@keyframes hover-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
