@@ -1293,6 +1293,18 @@
               //console.log(imagenes);
               modalProject.show();
             }
+
+            /* HAMBURGER */
+            const buttom_mobile_menu = document.getElementById("navbar-toggler");
+            const header_nav = document.getElementById("header-nav");
+            buttom_mobile_menu.addEventListener("click", function(){
+              if (header_nav.classList.contains('show')) {
+                header_nav.classList.remove("show");
+              } else {
+                header_nav.classList.add("show");
+              }
+            })
+            /* HAMBURGER */
           </script>
   </body>
 </html>
