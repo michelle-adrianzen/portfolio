@@ -80,11 +80,25 @@
         background-color: gray;
         margin: auto;
       }
-
+      .logo-iso-mobile
+      {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 36px;
+        height: 36px;
+        left: 15px;
+        transform: translate(0, -50%);
+        display: none;
+      }
       @media (max-width: 991px) {
         .menu-morcilla li::before
         {
           display: none;
+        }
+        .logo-iso-mobile
+        {
+          display: inline-block;
         }
       }
     </style>
@@ -96,6 +110,7 @@
           <header id="header" class="sticky-top">
             <nav class="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0">
               <div class="container-fluid justify-content-center align-items-end position-relative h-100 flex-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
+                <img src="assets/common/images/iso.png" alt="iso" class="logo-iso-mobile">
                 <a class="pb-lg-5 pb-0 w-100 text-center">
                   <span class="p-2 mb-lg-1 d-none d-lg-inline-block">
                     <img class="d-block" src="assets/common/images/profile.png" style="width: 100%;max-width: 170px;" title="I'm Michelle" alt="profile" />
@@ -135,7 +150,6 @@
                   <div class="container my-auto">
                     <div class="row">
                       <div class="col-12 text-center">
-                        <img class="d-lg-none d-inline-block mb-4" src="assets/common/images/profile.png" style="width: 100%;max-width: 170px;" title="I'm Michelle" alt="profile">
                         <p class="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
                         <h2 class="text-16 fw-bold text-white mb-2 mb-md-3">
                           <div class="Typewriter" data-testid="typewriter-wrapper">
