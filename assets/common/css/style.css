@@ -93,6 +93,20 @@
     transition: opacity 0.7s ease-in-out;
 }
 
+#particleCanvas {
+  z-index: 1; /* Encima del fondo (hero-bg) */
+  pointer-events: none; /* Permite hacer clic en los botones del banner */
+}
+
+.hero-mask {
+  z-index: 0; /* Aseguramos que la máscara esté al fondo */
+}
+
+.hero-content {
+  z-index: 2; /* El texto y botones siempre al frente */
+  position: relative;
+}
+
 @keyframes hover-animation {
     0% {
         opacity: 0;
