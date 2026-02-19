@@ -1,3 +1,34 @@
+/* 1. Definimos la animación de ancho */
+@keyframes progress-fill {
+  from { width: 0; }
+}
+
+/* 2. Estado inicial de las barras (sin ancho) */
+.progress-bar {
+  width: 0; 
+}
+
+/* 3. Cuando AOS activa la sección, animamos hasta el ancho definido en el HTML */
+.aos-animate .progress-bar {
+  animation: progress-fill 1.5s ease-out forwards !important;
+  /* El ancho final lo tomará automáticamente del atributo style del HTML */
+  width: var(--final-width); 
+}
+
+.progress {
+  height: 8px !important;
+  background-color: #1a1a1a !important;
+  border-radius: 10px !important;
+  overflow: visible !important; /* Para evitar que se corte la animación */
+}
+
+.progress-bar {
+  background-color: #EE3867 !important;
+  border-radius: 10px !important;
+}
+
+
+
 .custom-tools
 {
     display: flex;
