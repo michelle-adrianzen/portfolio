@@ -27,7 +27,24 @@
   border-radius: 10px !important;
 }
 
+.skill-tag {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #20252a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: #d5d5d5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: all 0.25s ease;
+}
 
+.skill-tag:hover {
+  border-color: #EE3867;
+  color: #fff;
+  transform: translateY(-2px);
+}
 
 .custom-tools
 {
